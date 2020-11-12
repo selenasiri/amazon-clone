@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import './Login.css'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import './Login.css';
+import { Link } from 'react-router-dom';
+import { auth } from './firebase';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -9,13 +10,21 @@ function Login() {
   const signIn = e => {
     e.preventDefault();
 
-    // firebase magic...
+    // some firebase magic...
   }
 
   const register = e => {
     e.preventDefault();
 
-    // firebase magic...
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+       // successfully created a new user w/ an email and password
+       console.log(auth);
+      })
+      .catch(error => alert(error.message))
+
+      // do some firebase magic...
   }
 
   return (
@@ -34,7 +43,7 @@ function Login() {
           <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
 
           <h5>Password</h5>
-          <input type='password' value={password} onChange={e => setEmail(e.target.value)} />
+          <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
 
           <button type='submit' onClick={signIn} className='login_signInButton'>Sign In</button>
         </form>

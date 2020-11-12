@@ -1,0 +1,37 @@
+[debug] [2020-11-12T23:55:49.455Z] ----------------------------------------------------------------------
+[debug] [2020-11-12T23:55:49.457Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2020-11-12T23:55:49.457Z] CLI Version:   8.16.0
+[debug] [2020-11-12T23:55:49.457Z] Platform:      win32
+[debug] [2020-11-12T23:55:49.457Z] Node Version:  v12.16.3
+[debug] [2020-11-12T23:55:49.458Z] Time:          Thu Nov 12 2020 18:55:49 GMT-0500 (Eastern Standard Time)
+[debug] [2020-11-12T23:55:49.458Z] ----------------------------------------------------------------------
+[debug] [2020-11-12T23:55:49.458Z] 
+[debug] [2020-11-12T23:55:49.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-12T23:55:49.467Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2020-11-12T23:55:51.544Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-challenge-yt.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub\u001b[22m"}}
+[info] +  functions: Using node@12 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@12 from host."}}
+[debug] [2020-11-12T23:55:53.632Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\selenasiri_gmail_com_application_default_credentials.json
+[debug] [2020-11-12T23:55:53.637Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\selenasiri_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\selenasiri_gmail_com_application_default_credentials.json"}}
+[debug] [2020-11-12T23:55:55.660Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/challenge-yt/webApps/-/config  
+ 
+[debug] [2020-11-12T23:55:56.228Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 23:55:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: amazon-clone {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mamazon-clone\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.2.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.2.2.zip..."}}
+[debug] [2020-11-12T23:56:00.468Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.2.2.zip [none]
+[debug] [2020-11-12T23:56:00.632Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.2.2.zip 200
+[debug] [2020-11-12T23:56:00.632Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.2.2.zip [stream]
+[debug] [2020-11-12T23:56:03.749Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2020-11-12T23:56:03.749Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2020-11-12T23:56:03.749Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.2.2\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.2.2\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2020-11-12T23:56:03.873Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] i  functions: Watching "C:\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2020-11-12T23:56:04.306Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2020-11-12T23:56:04.306Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2020-11-12T23:56:04.306Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2020-11-12T23:56:04.307Z] [worker-~diagnostic~-db736ad6-538a-4236-aa9d-4f0924bd0e04]: Assigning socketPath: \\?\pipe\C:\amazon-clone\functions\9108 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-db736ad6-538a-4236-aa9d-4f0924bd0e04]: Assigning socketPath: \\\\?\\pipe\\C:\\amazon-clone\\functions\\9108"}}
+[debug] [2020-11-12T23:56:04.308Z] [worker-~diagnostic~-db736ad6-538a-4236-aa9d-4f0924bd0e04]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-db736ad6-538a-4236-aa9d-4f0924bd0e04]: BUSY"}}

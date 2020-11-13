@@ -2,7 +2,7 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBuImX-Ydju7LKrVpLWAt5TDZvoTUduOc4",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "challenge-yt.firebaseapp.com",
   databaseURL: "https://challenge-yt.firebaseio.com",
   projectId: "challenge-yt",
